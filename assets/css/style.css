@@ -1,0 +1,136 @@
+/* Password Generator Box */
+/* variables */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #93379b;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pwd-generator-box {
+  background-color: #ae8fbc;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box-title {
+  padding: 1rem;
+  text-align: center;
+  color: purple;
+  font-weight: bold;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.generate-pwd-form {
+  display: -ms-grid;
+  display: grid;
+  border: 1px purple;
+  border-radius: 1rem;
+  row-gap: 3rem;
+  background-color: #fac3cd;
+}
+
+.subtitle-form {
+  padding: 1rem;
+  color: rebeccapurple;
+  text-align: center;
+  border-bottom: 20px rebeccapurple;
+}
+
+.secured-pwd-box {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: purple;
+}
+
+.pwd-input, input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5rem;
+  background: lightgrey;
+  padding: 1rem;
+  border: 1px solid purple;
+  border-style: dashed;
+  border-radius: 1rem;
+  color: #373783;
+  height: 2rempx;
+  width: 300px;
+  word-break: break-all;
+}
+
+.pwd-btn {
+  position: relative;
+  display: inline-block;
+  left: 5rem;
+  bottom: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 150px;
+  background-color: lightgrey;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
