@@ -23,7 +23,6 @@ function askUser() {
   userUpperCase = confirm ("Should we add upper case?");
   userNumeric = confirm ("What about we include numeric characters?");
   userSpecialCharacters = confirm ("Any special characters?");
-  validateAnswers();
 }
 
  //Variables declared for each password criteria
@@ -48,8 +47,10 @@ function validateAnswers() {
 // Function generatePassword select at random characters, multiplies by the length and adds/concatenates random characters
 function generatePassword(){
   askUser();
+  validateAnswers();
   for (i = 0, i < passwordLength; i ++;) {
     var randomCharacters = Math.floor(Math.random()*chars.length);
     password += chars.substring(randomCharacters,randomCharacters+1);
   }
+  return randomCharacters;
 }}
