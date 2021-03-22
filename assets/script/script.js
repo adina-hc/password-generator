@@ -43,7 +43,7 @@ function validateAnswers() {
       chars += "1234567890";
     }    
     if (userSpecialCharacters == true) {
-    alert ("You chose to include special characters");
+      alert ("You chose to include special characters");
       chars += "~!@#$%^&*()_-=;',./|\+|}{:?><`";
     }
     return chars;
@@ -61,7 +61,6 @@ function generatePassword(){
     password += chars.substring(randomCharacters,randomCharacters+1);
     }
   return password;
-  console.log(password);
 }
 
 // Add event listener to the generate button
