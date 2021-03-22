@@ -13,7 +13,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 /* Propmt user for length of password and criteria for random password generation */
-var passwordLength = 0;
+
 function askUser() {
   var passwordLength = prompt("Please enter the legnth of the desired password. It must be between 8 and 128 characters long");
   while (passwordLength < 8 || passwordLength > 128) {
@@ -27,19 +27,20 @@ function askUser() {
 
  //Variables declared for each password criteria
 function validateAnswers() {
-  if (userLowerCase.isTrue) {
+  if (userLowerCase = true) {
     var chars = "qwertyuiopasdfghjklzxcvbnm";
   }
-    if (userUpperCase.isTrue) {
+    if (userUpperCase = true) {
       var chars = chars += "QWERTYUIOPASDFGHJKLZXCVBNM";
     }
-      if (userNumeric.isTrue) {
+      if (userNumeric = true) {
         var chars = chars += "1234567890";
       }
-        if (userSpecialCharacters.isTrue) {
+        if (userSpecialCharacters = true) {
           var chars = chars += "~!@#$%^&*()_-=;',./|\+|}{:?><`"
         }
   else {
+    alert ("You must select criteria to create a password")
     askUser();
   }
 }
