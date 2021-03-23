@@ -9,16 +9,17 @@ It includes a responsive user interface that adapts to multiple screen sizes.
 
 ## Acceptance Criteria
 
-* Generation of a new and secure password on the click of a button
-* Prompt the user to provide desired password length:
-  - Then user is notified when the password length is not within the required minimum of 8 and maximum of 128 characters and prompt to re-enter
-* The user is prompt for password criteria consideration:
+* User clicks the button and a new and secure password is generated:
+
+  User is prompted to provide desired password length:
+  - The user is notified if the password length is not within the required minimum of 8 and maximum of 128 characters, and is prompted to re-enter
+* The user is prompted to select password criteria for consideration:
   - Upper case
   - Lower case
   - Numeric
   - Special characters
-* User is notified that they must select at least one character type if none selected
-* Every time the user is prompted for the criteria selection, the user receives a validation
+* When none selected, the user is notified that minimum criteria must be selected (at least one character type)
+* Data is validated for consideration
 * When all prompts are answered, the password is generated matching the user's criteria
 * When the password is generated, it is written on the HTML form.
 

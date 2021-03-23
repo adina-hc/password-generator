@@ -1,4 +1,3 @@
-
 // Assign the HTML id of the Generate Password button
 var generateBtn = document.querySelector("#generate");
 
@@ -23,7 +22,7 @@ function askUser(passwordLength) {
   userSpecialCharacters = confirm ("Any special characters?");
 }
 
- //Variables declared for each password criteria
+ // Validations occur for user criteria selected. If user does not select any criteria, a message prompts the user to enter the criteria
 function validateAnswers() {
   while (userLowerCase == false && userUpperCase == false && userNumeric == false && userSpecialCharacters == false) {
     alert ("You must select at least one criteria to create a password")
@@ -31,19 +30,15 @@ function validateAnswers() {
   } 
   var chars = "";
     if (userLowerCase == true) {
-      alert ("You chose to include lower case characters");
-      chars += "qwertyuiopasdfghjklzxcvbnm";
+       chars += "qwertyuiopasdfghjklzxcvbnm";
     }
     if (userUpperCase == true) {
-      alert ("You chose to include upper case characters");
       chars += "QWERTYUIOPASDFGHJKLZXCVBNM";
     }
     if (userNumeric == true) {
-      alert ("You chose to include numeric characters");
       chars += "1234567890";
     }    
     if (userSpecialCharacters == true) {
-      alert ("You chose to include special characters");
       chars += "~!@#$%^&*()_-=;',./|\+|}{:?><`";
     }
     return chars;
@@ -54,7 +49,6 @@ function generatePassword(){
   var password = "";
   var passwordLength = window.prompt("Please enter the length of the desired password. It must be between 8 and 128 characters long");
   askUser(passwordLength);
-  console.log(passwordLength);
   var chars = validateAnswers();
   for (i = 0; i < passwordLength; i++) {
     var randomCharacters = Math.floor(Math.random()*chars.length);
