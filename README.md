@@ -11,17 +11,17 @@ It includes a responsive user interface that adapts to multiple screen sizes.
 
 * Generation of a new and secure password on the click of a button
 * Prompt the user to provide desired password length:
-  - Then user is notified when the password length is not within the required minimum of 8 and maximum of 128 characters
+  - Then user is notified when the password length is not within the required minimum of 8 and maximum of 128 characters and prompt to re-enter
 * The user is prompt for password criteria consideration:
   - Upper case
   - Lower case
   - Numeric
   - Special characters
-* User is notified that they must select at least one character type
+* User is notified that they must select at least one character type if none selected
 * Every time the user is prompted for the criteria selection, the user receives a validation
 * When all prompts are answered, the password is generated matching the user's criteria
 * When the password is generated, it is written on the HTML form.
-* Prompt the user if the password is not within the range of at least 8 characters and not longer than 128 characters
+
 
 
 ## Mock-Up
