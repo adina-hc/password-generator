@@ -10,7 +10,7 @@ function writePassword() {
 }
 /* Prompt user for password length and criteria for random password generation */
 
-//var passwordLength = 0;
+var passwordLength = 0;
 
 function askUser(passwordLength) {
   while (passwordLength < 8 || passwordLength > 128) {
