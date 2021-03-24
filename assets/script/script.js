@@ -20,6 +20,7 @@ function askUser(passwordLength) {
   userUpperCase = confirm ("Should we add upper case?");
   userNumeric = confirm ("What about we include numeric characters?");
   userSpecialCharacters = confirm ("Any special characters?");
+  return passwordLength;
 }
 
  // Validations occur for user criteria selected. If user does not select any criteria, a message prompts the user to enter the criteria
@@ -41,20 +42,21 @@ function validateAnswers() {
     if (userSpecialCharacters == true) {
       chars += "~!@#$%^&*()_-=;',./|\+|}{:?><`";
     }
-    return chars;
+    return chars;   
 }
 
 // Function generatePassword select at random characters, multiplies by the length and concatenates random characters
 function generatePassword(){
   var password = "";
   var passwordLength = window.prompt("Please enter the length of the desired password. It must be between 8 and 128 characters long");
-  askUser(passwordLength);
+  passwordLength = askUser(passwordLength);
   var chars = validateAnswers();
   for (i = 0; i < passwordLength; i++) {
     var randomCharacters = Math.floor(Math.random()*chars.length);
     password += chars.substring(randomCharacters,randomCharacters+1);
-    }
+  }
   return password;
+
 }
 
 // Add event listener to the generate button
